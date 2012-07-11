@@ -23,16 +23,9 @@ h1, h2, h3, h4, h5, h6
 }
 #siteHeader
 {
-    padding-top: 20px;
     background: #fff;
     border-top: 3px solid #1f1f1f;
 }
-
-#siteHeader h1
-{
-    text-align: center;
-}
-
 #showcase, #features, #benefits, #media
 {
     padding: 2em 20px;
@@ -100,16 +93,17 @@ a:hover
 ----------------------------------------- */
 .nav-bar
 {
-    float: right;
     background-color: transparent;
     border: 0;
     margin-top: -20px;
+    padding-top: 20px;
 }
 
 .nav-bar > li
 {
     border: 0;
     background-color: #1F1F1F;
+    width: 25%;
 }
 
 .nav-bar > li:first-child

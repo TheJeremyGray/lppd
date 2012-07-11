@@ -1,47 +1,41 @@
-﻿@using Prototyping.Ipsum
-@using Prototyping.Placeholdit
-@*The prototyping helper allows us to build fast demo code*@
+﻿@*The prototyping helper allows us to build fast demo code*@
 @using Prototyping.Ipsum
 @using Prototyping.Placeholdit
-
+@*Begin showcase*@
 <div id="showcase">
     <div class="row">
-        <div class="twelve columns">
+        <div class="six columns">@Html.Ipsum().h1().h4(wordCount: 8)
+            <p class="action">
+                <a href="#" class="nice large orange button">Donate Now</a>
+            </p>
+        </div>
+        <div class="six columns">
             <div id="rotator">
-           
-                         
-                 <div>
-                    @Html.Placehold(width: 600, height: 304, text: "product slide 1", backgroundColor: "A7D5F2")   
-                    <h4>This is a content slider 1.</h4>
-                    <p>Each slide holds arbitrary content, like text or actions.</p>                    
-                 </div>
-                <div>
-                    <h4>This is a content slider 2.</h4>
-                    <p>Each slide holds arbitrary content, like text or actions.</p>
-                      @Html.Placehold(width: 600, height: 304, text: "product slide 2", backgroundColor: "F2B807")
-                 </div>
-               <div>
-                    <h4>This is a content slider 3.</h4>
-                    <p>Each slide holds arbitrary content, like text or actions.</p>
-                    @Html.Placehold(width: 600, height: 304, text: "product slide 3", backgroundColor: "F23847")
-               </div>
+                @Html.Placehold(width: 468, height: 304, text: "product slide 1", backgroundColor:"A7D5F2")
+                @Html.Placehold(width: 468, height: 304, text: "product slide 2", backgroundColor:"F2B807")
+                @Html.Placehold(width: 468, height: 304, text: "product slide 3", backgroundColor:"F23847")
             </div>
         </div>
     </div>
-    <div id="features">
-    <div class="row">
-        <div class="four columns">@Html.Ipsum().h3().p()</div>
-        <div class="four columns">@Html.Ipsum().h3().p()</div>
-        <div class="four columns">@Html.Ipsum().h3().p()</div>
-    </div>
-
 </div>
+<div id="benefits">
+    <div class="row">
+        <div class="eight columns">
+            @Html.Ipsum().h3().p().h4().p()
+        </div>
+        <div class="four columns">
+            @Html.Ipsum().h3().p(paragraphCount: 1, sentenceCount: 3)
+            <p>
+                <a href="#" class="nice orange button">Donate Now</a>
+            </p>
+        </div>
+    </div>
 </div>
 @section scripts
 {
 <script type="text/javascript">
-    $(window).load(function () {
-        $('#rotator').orbit();
-    });
+     $(window).load(function() {
+         $('#rotator').orbit();
+     });
 </script>
 }

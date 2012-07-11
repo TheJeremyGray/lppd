@@ -21,7 +21,7 @@ namespace lppd
 
         public static void RegisterRoutes(RouteCollection routes)
         {
-            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");        
+            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
                 "MerchandiseRoute",
@@ -32,7 +32,7 @@ namespace lppd
             routes.MapRoute(
                 "DonateRoute",
                 "Donate",
-                new { controller = "Home", action = "Donate", id = UrlParameter.Optional}
+                new { controller = "Home", action = "Donate", id = UrlParameter.Optional }
                 );
 
             routes.MapRoute(

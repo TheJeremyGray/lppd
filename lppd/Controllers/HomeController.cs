@@ -10,13 +10,31 @@ namespace lppd.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Welcome to ASP.NET MVC!";
+            ViewBag.Message = "Index";
 
             return View();
         }
 
         public ActionResult About()
         {
+            return View();
+        }
+
+        public ActionResult Donate()
+        {
+            ViewBag.Message = "Donate";
+            return View();
+        }
+
+        public ActionResult Merchandise()
+        {
+            ViewBag.Message = "Merchandise";
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            ViewBag.Message = "Contact Us";
             return View();
         }
     }

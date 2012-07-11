@@ -135,7 +135,7 @@
 	.button.disabled, .button[disabled] { opacity: 0.6; cursor: default; }
 	
 	/* Correct FF button padding */
-	@-moz-document url-prefix(http://) {
+	@-moz-document url-prefix("http://") {
 		input[type=submit].button::-moz-focus-inner, button.button::-moz-focus-inner { border: 0; padding: 0; }
 		input[type=submit].tiny.button		{ padding: 5px 14px 7px; }
 		input[type=submit].small.button		{ padding: 7px 20px 8px; }
@@ -199,7 +199,8 @@
 		.nice.tabs.vertical dd:first-child a.active { margin: 0; }
     
     ul.tabs-content { margin: 0; display: block; }
-    ul.tabs-content>li { display:none; }
+    ul.tabs-content>li { display: none; }
+    .no-js ul.tabs-content>li { display: block; }
     ul.tabs-content>li.active { display: block; }
     
     dl.contained, dl.nice.contained { margin-bottom: 0; }
@@ -229,7 +230,7 @@
 	ul.breadcrumbs li a, ul.breadcrumbs li span { text-transform: uppercase; font-size: 11px; padding-left: 12px; }
 	ul.breadcrumbs li:first-child a, ul.breadcrumbs li:first-child span { padding-left: 0; }
 	ul.breadcrumbs li:before { content: "/"; color: #aaa; }
-	ul.breadcrumbs li:first-child:before { content: ""; }
+	ul.breadcrumbs li:first-child:before { content: " "; }
 	ul.breadcrumbs li.current a { cursor: default; color: #333; }
 	ul.breadcrumbs li:hover a, ul.breadcrumbs li a:focus { text-decoration: underline; }
 	ul.breadcrumbs li.current:hover a, ul.breadcrumbs li.current a:focus { text-decoration: none; }
@@ -285,39 +286,44 @@
 /*	--------------------------------------------------
    	Sub Navs
    	http://www.zurb.com/article/292/how-to-create-simple-and-effective-sub-na
-   	
+
 	-------------------------------------------------- */
+	
+	dl.sub-nav { display: block; width: auto; overflow: hidden; margin: -4px 0 18px -9px; padding-top: 4px; }
+	dl.sub-nav dt, dl.sub-nav dd { float: left; display: inline; margin-left: 9px; margin-bottom: 4px; }
+	dl.sub-nav dt { color: #999; font-weight: normal; }
+	dl.sub-nav dd a { text-decoration: none; border-radius: 12px; }
+	dl.sub-nav dd.active a { background: #00A6FC; color: #fff; padding: 3px 9px; }
 
-  dl.sub-nav {
-  	display: block;
-    width: auto;
-    overflow: hidden;
-    margin: -4px 0 18px -9px;
-    padding-top: 4px;
-  }
 
-  dl.sub-nav dt, dl.sub-nav dd {
-    float: left;
-    display: inline;
-    margin-left: 9px;
-    margin-bottom: 4px;
-  }
 
-  dl.sub-nav dt {
-    color: #999;
-    font-weight: normal;
-  }
 
-  dl.sub-nav dd a {
-    text-decoration: none;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-  }
-  dl.sub-nav dd.active a {
-    background: #00A6FC;
-    color: #fff;
-    padding: 3px 9px;
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*	--------------------------------------------------
    	Video

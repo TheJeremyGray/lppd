@@ -79,10 +79,12 @@
   <ItemGroup>
     <Compile Include="Bootstrap\Bundles_Startup.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\LogAttrivute.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -96,6 +98,8 @@
     <Content Include="Content\core\typography.css" />
     <Content Include="Content\core\ui.css" />
     <Content Include="Content\ie.css" />
+    <Content Include="Content\images\irongrip.png" />
+    <Content Include="Content\images\natural_paper.png" />
     <Content Include="Content\mobile.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -141,8 +145,9 @@
     <Content Include="Content\themes\foundation\orbit\timer-black.png" />
     <Content Include="Global.asax" />
     <Content Include="humans.txt" />
-    <Content Include="images\patch.png" />
-    <Content Include="images\seal.png" />
+    <Content Include="Content\images\patch.png" />
+    <Content Include="Content\images\seal.png" />
+    <Content Include="Content\images\seal_medium.png" />
     <Content Include="Ipsum_examples.txt" />
     <Content Include="MIT-LICENSE.txt" />
     <Content Include="README.txt" />
@@ -189,11 +194,15 @@
     <Content Include="Views\Account\LogOn.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\original_Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LogOnPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\Home\Donate.cshtml" />
+    <Content Include="Views\Home\Merchandise.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

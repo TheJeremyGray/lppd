@@ -10,7 +10,7 @@ namespace lppd.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Index";
+            ViewBag.Message = "";
 
             return View();
         }
@@ -28,7 +28,7 @@ namespace lppd.Controllers
 
         public ActionResult Merchandise()
         {
-            ViewBag.Message = "Merchandise";
+            ViewBag.Message = "spread the word, you know you want to";
             return View();
         }
 

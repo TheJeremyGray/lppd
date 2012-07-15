@@ -103,8 +103,11 @@
     <Content Include="Content\ie.css" />
     <Content Include="Content\images\facicon.ico" />
     <Content Include="Content\images\irongrip.png" />
-    <Content Include="Content\images\natural_paper.png" />
-    <Content Include="Content\images\seal.ico" />
+    <Content Include="Content\images\seal.gif" />
+    <Content Include="Content\images\seal2.gif" />
+    <Content Include="Content\images\seal_large.png" />
+    <Content Include="Content\images\shirtash.JPG" />
+    <Content Include="Content\images\shirtnavy.gif" />
     <Content Include="Content\mobile.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />

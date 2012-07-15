@@ -1,12 +1,12 @@
 ﻿@using Prototyping.Placeholdit;
 
 <div id="siteHeader" class="container">
+  
     <div class="row">
-        <div class="four columns">
-           @* <h1>LPPD</h1>*@         
-           @Html.Placehold(width: 150, height: 150, text: "Seal", backgroundColor:"A7D5F2")
+        <div class="three columns">
+          <img src="/Content/images/seal2.gif" alt="Louisville Police Pipes and Drums"/>         
         </div>
-        <div class="eight columns">
+        <div class="nine columns">
             <div class="row">
                <div class="twelve columns">
                     <ul class="nav-bar">
@@ -19,9 +19,10 @@
             </div>
             <div class="row">
                <div class="twelve columns">
-                    <h3>Louisville Police Pipes and Drums</h3>
+                    <h2>Louisville Police Pipes and Drums</h2>
+                    <h4>@ViewBag.Message</h4>
                </div> 
-            </div>        
+            </div>      
         </div>
     </div>
 </div>

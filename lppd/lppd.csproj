@@ -103,9 +103,11 @@
     <Content Include="Content\ie.css" />
     <Content Include="Content\images\facicon.ico" />
     <Content Include="Content\images\irongrip.png" />
+    <Content Include="Content\images\patch.gif" />
     <Content Include="Content\images\seal.gif" />
     <Content Include="Content\images\seal2.gif" />
     <Content Include="Content\images\seal_large.png" />
+    <Content Include="Content\images\shirtash.gif" />
     <Content Include="Content\images\shirtash.JPG" />
     <Content Include="Content\images\shirtnavy.gif" />
     <Content Include="Content\mobile.css" />
@@ -186,6 +188,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="Views\Home\Sponsor.cshtml" />
     <None Include="_bin_deployableAssemblies\Microsoft.Web.Infrastructure.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.Razor.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.dll" />
@@ -214,7 +217,6 @@
     <Content Include="Views\Shared\_LogOnPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Home\Donate.cshtml" />
     <Content Include="Views\Home\Merchandise.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />

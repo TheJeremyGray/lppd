@@ -20,9 +20,9 @@ namespace lppd.Controllers
             return View();
         }
 
-        public ActionResult Donate()
+        public ActionResult Sponsor()
         {
-            ViewBag.Message = "Donate";
+            ViewBag.Message = "Sponsorship Opportunities Available";
             return View();
         }
 

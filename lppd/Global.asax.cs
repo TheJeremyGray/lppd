@@ -30,9 +30,9 @@ namespace lppd
                 );
 
             routes.MapRoute(
-                "DonateRoute",
-                "Donate",
-                new { controller = "Home", action = "Donate", id = UrlParameter.Optional }
+                "SponsorRoute",
+                "Sponsor",
+                new { controller = "Home", action = "Sponsor", id = UrlParameter.Optional }
                 );
 
             routes.MapRoute(

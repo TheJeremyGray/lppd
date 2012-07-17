@@ -43,3 +43,5 @@ C:\Users\jgray\Documents\GitHub\lppd\lppd\bin\Prototyping.Placeholdit.xml
 C:\Users\jgray\Documents\GitHub\lppd\lppd\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\jgray\Documents\GitHub\lppd\lppd\obj\Debug\lppd.dll
 C:\Users\jgray\Documents\GitHub\lppd\lppd\obj\Debug\lppd.pdb
+C:\Users\jgray\Documents\SourceCode\git\lppd\lppd\bin\Facebook.dll
+C:\Users\jgray\Documents\SourceCode\git\lppd\lppd\bin\Facebook.xml

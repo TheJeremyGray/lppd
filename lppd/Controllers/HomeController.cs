@@ -26,16 +26,12 @@ namespace lppd.Controllers
             return View();
         }
 
-        public ActionResult Merchandise()
+        public ActionResult Merchandise(string id)
         {
             ViewBag.Message = "spread the word, you know you want to";
+                       
             return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Contact Us";
-            return View();
+           
         }
     }
 }

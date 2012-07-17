@@ -25,7 +25,7 @@ namespace lppd
 
             routes.MapRoute(
                 "MerchandiseRoute",
-                "Merchandise",
+                "Merchandise/{id}",
                 new { controller = "Home", action = "Merchandise", id = UrlParameter.Optional }
                 );
 

@@ -1,0 +1,587 @@
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	*
+	{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	body
+	{
+		background: #000000;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 10pt;
+		color: #3d3d3d;
+	}
+	
+	h1, h2, h3
+	{
+		text-transform: uppercase;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: 700;
+	}
+	
+	h2
+	{
+		font-size: 2em;
+		line-height: 1.15em;
+	}
+
+	form
+	{
+	}
+	
+		form input,
+		form select,
+		form textarea
+		{
+			-webkit-appearance: none;
+		}
+			
+	br.clear
+	{
+		clear: both;
+	}
+	
+	p, ul, ol, dl, table
+	{
+		margin-bottom: 1em;
+	}
+	
+	p
+	{
+		line-height: 1.75em;
+	}
+	
+	section,
+	article
+	{
+		margin-bottom: 3em;
+	}
+	
+	section > :last-child,
+	article > :last-child
+	{
+		margin-bottom: 0;
+	}
+
+	section:last-child,
+	article:last-child
+	{
+		margin-bottom: 0;
+	}
+
+	.image
+	{
+		display: inline-block;
+	}
+	
+		.image img
+		{
+			display: block;
+			width: 100%;
+			border-radius: 8px;
+		}
+
+	.image-full
+	{
+		display: block;
+		width: 100%;
+		margin: 0 0 2em 0;
+	}
+	
+	.image-left
+	{
+		float: left;
+		margin: 0 2.50em 2em 0;
+	}
+	
+	.image-centered
+	{
+		display: block;
+		margin: 0 0 2em 0;
+	}
+
+		.image-centered img
+		{
+			margin: 0 auto;
+			width: auto;
+		}
+
+
+	.button
+	{
+		display: inline-block;
+		background: #3a3a3a;
+		background-image: -moz-linear-gradient(top, #333333, #1b1b1b);
+		background-image: -webkit-linear-gradient(top, #333333, #1b1b1b);
+		background-image: -o-linear-gradient(top, #333333, #1b1b1b);
+		background-image: -ms-linear-gradient(top, #333333, #1b1b1b);
+		background-image: linear-gradient(top, #333333, #1b1b1b);
+		border: 1px solid #000000;
+		box-shadow: inset 0px 1px 0px #7a7a7a, inset 0px 0px 1px #4e4e4e, inset 0px 0px 2px #414141;
+		border-radius: 7px;
+		text-shadow: -1px -1px 0 rgba(0,0,0,1);
+		color: #fff !important;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: 800;
+		font-size: 1.20em;
+		padding: 1.1em 2em 1.1em 2em;
+		outline: 0;
+	}
+	
+		.button:hover
+		{
+			background-image: -moz-linear-gradient(top, #383838, #1b1b1b);
+			background-image: -webkit-linear-gradient(top, #383838, #1b1b1b);
+			background-image: -o-linear-gradient(top, #383838, #1b1b1b);
+			background-image: -ms-linear-gradient(top, #383838, #1b1b1b);
+			background-image: linear-gradient(top, #383838, #1b1b1b);
+		}
+	
+		.button:active
+		{
+			background-image: -moz-linear-gradient(top, #1b1b1b, #333333);
+			background-image: -webkit-linear-gradient(top, #1b1b1b, #333333);
+			background-image: -o-linear-gradient(top, #1b1b1b, #333333);
+			background-image: -ms-linear-gradient(top, #1b1b1b, #333333);
+			background-image: linear-gradient(top, #1b1b1b, #333333);
+		}
+	
+		.button-icon
+		{
+			position: relative;
+		}
+		
+			.button-icon:after
+			{
+				content: '';
+				display: inline-block;
+				width: 32px;
+				height: 32px;
+				background: url('images/icons.png');
+				position: absolute;
+				top: 50%;
+			}
+			
+			.button-icon:before
+			{
+				content: '';
+				display: inline;
+				width: 32px;
+				padding-left: 25px;
+				margin-left: 0.25em;
+			}
+			
+			.button-icon-page-small:after
+			{
+				margin-top: -22px;
+				background-position: -30px 0px;
+				left: 1.20em;
+			}
+
+			.button-icon-page:after
+			{
+				margin-top: -18px;
+				background-position: -6px 0px;
+				left: 2em;
+			}
+
+
+			.button-icon-check:after
+			{
+				background-position: 0px 0px;
+			}
+			
+			.button-icon-rarrow:after
+			{
+				background-position: -32px 0px;
+			}
+			
+			.button-icon-info:after
+			{
+				background-position: -64px 0px;
+			}
+			
+			.button-icon-paper:after
+			{
+				background-position: -96px 0px;
+			}
+			
+		.button-small
+		{
+			padding: 1em 1em 1em 1em;
+			line-height: 1em;
+		}
+	
+		.button-medium
+		{
+			border-radius: 8px;
+			font-size: 1.25em;
+			padding: 1em 2.25em 1em 2.25em;
+		}
+
+		.button-big
+		{
+			border-radius: 8px;
+			font-size: 1.5em;
+			padding: 1em 2.25em 1em 2.25em;
+		}
+
+		.button-huge
+		{
+			border-radius: 8px;
+			font-size: 1.8em;
+			padding: 1em 3em 1em 3em;
+		}
+		
+		.button-padding
+		{
+			margin-top: 1.40em;
+		}
+
+		.button-alt
+		{
+			background: #862222;
+			background: -moz-linear-gradient(top, #a32b2b, #701c1c);
+			background: -webkit-linear-gradient(top, #a32b2b, #701c1c);
+			background: -ms-linear-gradient(top, #a32b2b, #701c1c);
+			background: -o-linear-gradient(top, #a32b2b, #701c1c);
+			background: linear-gradient(top, #a32b2b, #701c1c);		
+			border: 1px solid #000000;
+			box-shadow: inset 0px 1px 0px #d35a5a, inset 0px 0px 1px #af4242, inset 0px 0px 2px #8b3838;
+		}
+
+			.button-alt:hover
+			{
+				background-image: -moz-linear-gradient(top, #ad2f2f, #701c1c);
+				background-image: -webkit-linear-gradient(top, #ad2f2f, #701c1c);
+				background-image: -o-linear-gradient(top, #ad2f2f, #701c1c);
+				background-image: -ms-linear-gradient(top, #ad2f2f, #701c1c);
+				background-image: linear-gradient(top, #ad2f2f, #701c1c);
+			}
+
+			.button-alt:active
+			{
+				background-image: -moz-linear-gradient(top, #701c1c, #a32b2b);
+				background-image: -webkit-linear-gradient(top, #701c1c, #a32b2b);
+				background-image: -o-linear-gradient(top, #701c1c, #a32b2b);
+				background-image: -ms-linear-gradient(top, #701c1c, #a32b2b);
+				background-image: linear-gradient(top, #701c1c, #a32b2b);
+			}
+
+		.button-alt-border
+		{
+			border: 1px solid #540f0f;
+		}
+
+	ul.style1
+	{
+		padding: 1em 0em 1em 0em;
+	}
+	
+		ul.style1 li
+		{
+			padding: 1em 0em 1em 0em;
+			border-top: 1px solid #e8e8e8;
+		}
+		
+		ul.style1 a
+		{
+			color: #6e6d6d;
+		}
+		
+			ul.style1 a:hover
+			{
+				text-decoration: none;
+			}
+			
+		ul.style1 .first
+		{
+			padding-top: 0em;
+			border-top: none;
+		}
+	
+	ul.style2
+	{
+		padding-top: 0.40em;
+	}
+
+		ul.style2 li
+		{
+			padding: 1.00em 0em 1.25em 0em;
+			border-top: 1px solid  #671414;
+			box-shadow: inset 0 1px 0 #bd3636;
+		}
+		
+		ul.style2 a
+		{
+			color: #cab1b1;
+		}
+		
+			ul.style2 a:hover
+			{
+				text-decoration: none;
+			}
+		
+		ul.style2 .first
+		{
+			padding-top: 0;
+			border-top: none;
+			box-shadow: none;
+		}
+
+	ul.style3
+	{
+	}
+	
+		ul.style3 li
+		{
+			padding: 1.50em 0em 1.90em 0em;
+			border-top: 1px solid #e8e8e8;
+		}
+		
+		ul.style3 a
+		{
+			text-decoration: none;
+			color: #6e6d6d;
+		}
+		
+			ul.style3 a:hover
+			{
+				text-decoration: underline;
+			}
+			
+		ul.style3 .posted
+		{
+			font-size: 0.90em;
+			color: #b6b6b6;
+		}
+		
+		ul.style3 .first
+		{
+			padding-top: 0em;
+			border-top: none;
+		}
+
+	ul.style4
+	{
+		overflow: hidden;
+		padding: 0.25em 0em 0em 0em;
+	}
+	
+		ul.style4 li
+		{
+			padding: 2.25em 0em 1.25em 0em;
+			border-top: 1px solid #e8e8e8;
+		}
+		
+		ul.style4 a
+		{
+			text-decoration: none;
+			color: #2b2b2b;
+		}
+		
+			ul.style4 a:hover
+			{
+				text-decoration: underline;
+			}
+			
+		ul.style4 h3
+		{
+			padding: 0em 0em 0.50em 0em;
+			font-size: 1.50em;
+		}
+			
+		ul.style4 .first
+		{
+			padding-top: 0em;
+			border-top: none;
+		}
+
+	ul.style5
+	{
+		overflow: hidden;
+		padding-top: 1em;
+	}
+		
+		ul.style5 li
+		{
+			float: left;
+			margin-right: 0.50em;
+		}
+
+	ol.style1
+	{
+	}
+
+	.box
+	{
+		background: #FFFFFF;
+		box-shadow: 0px 0px 5px 1px rgba(0,0,0,.10);
+		border-radius: 8px;
+		border: 1px solid #c0c0c0;
+	}
+		
+		.box .content
+		{
+			overflow: hidden;
+			/*border-top: 1px solid #dadada;*/
+			padding: 3em 3.50em;
+		}
+		
+	.box-heading
+	{
+		padding: 3em 3em 2em 3em;
+		background: #f4f4f4;
+		background-image: -moz-linear-gradient(top, #fafafa, #f3f3f3);
+		background-image: -webkit-linear-gradient(top, #fafafa, #f3f3f3);
+		background-image: -o-linear-gradient(top, #fafafa, #f3f3f3);
+		background-image: -ms-linear-gradient(top, #fafafa, #f3f3f3);
+		background-image: linear-gradient(top, #fafafa, #f3f3f3);
+		border-radius: 8px 8px 0px 0px;
+		border-bottom: 1px solid #FFFFFF;
+	}
+		
+	.box-standard h2
+	{
+		padding: 0em 0em 0.25em 0em;
+		font-size: 2em;
+	}
+	
+	.box-standard .subheading
+	{
+		display: block;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 1.50em;
+		color: #b22b2b;
+	}
+	
+
+	.box-post
+	{
+	}
+	
+	.box-featured-post
+	{
+	}
+
+	.box-news
+	{
+	}
+	
+	.box-tweets
+	{
+	}
+
+	.box-contact
+	{
+	}
+
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+
+	#wrapper
+	{
+		overflow: hidden;
+		background: #e8e8e8;
+	}
+	
+	.homepage #wrapper
+	{
+		background: #e8e8e8 url(images/bg02.jpg) repeat-x left top;
+		padding-top: 0em;
+	}
+
+	#header-wrapper
+	{
+		overflow: hidden;
+		background: url(images/bg01.jpg) left top;
+		box-shadow: inset 0 0 0 0 #000000, inset 0 -2px 2px -1px #000000;
+		border-bottom: 1px solid #2c2c2c;
+	}
+	
+	#banner-wrapper
+	{
+		overflow: hidden;
+	}
+	
+	#main-wrapper
+	{
+	}
+	
+	#footer-wrapper
+	{
+		overflow: hidden;
+	}
+	
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+		overflow: hidden;
+		color: #cab1b1;
+	}
+	
+		#footer h2
+		{
+			padding: 0em 0em 1em 0em;
+			color: #FFFFFF;
+		}
+
+	
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright 
+	{
+		overflow: hidden;
+		margin-top: 2em;
+		padding: 1em 0em 4em 0em;
+/*		border-top: 1px solid  #671414;
+		box-shadow: inset 0 1px 0 #bd3636;
+*/		
+		text-align: center;
+		color: #666161;
+	}
+
+/*********************************************************************************/
+/* Two Column                                                                    */
+/*********************************************************************************/
+
+	#two-column 
+	{
+	}
+
+	#two-column .image-left
+	{
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+

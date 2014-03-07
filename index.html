@@ -1,23 +1,32 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
-	<head>
+	<head>      
 		<title>Louisville Police Pipes and Drums</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="bagpipe" />
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Open+Sans+Condensed:300,700" rel="stylesheet" />
-		<script src="js/jquery-1.8.3.min.js"></script>
+	    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Open+Sans+Condensed:300,700" rel="stylesheet" />
+	    <!--	<script src="//code.jquery.com/jquery-1.8.3.min.js"></script>
+	        <script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js">\x3C/script>')</script>
+	        <script src="//code.jquery.com/ui/1.8.3/jquery-ui.min.js"></script>
+	        <script>window.jQuery.ui || document.write('<script src="js/jquery-ui.min.js">\x3C/script>')</script>-->
+	    <script src="js/jquery-1.8.3.min.js"></script>       
+        <script src="js/bootstrap.min.js"></script>
 		<script src="css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
-		<script src="js/jquery.dropotron-1.2.js"></script>
+<!--		<script src="js/jquery.dropotron-1.2.js"></script>-->
 		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/5grid/core.css" />
-			<link rel="stylesheet" href="css/5grid/core-desktop.css" />
-			<link rel="stylesheet" href="css/5grid/core-1200px.css" />
-			<link rel="stylesheet" href="css/5grid/core-noscript.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-		</noscript>
+	    <noscript>
+	        <link rel="stylesheet" href="css/5grid/core.css" />
+	        <link rel="stylesheet" href="css/5grid/core-desktop.css" />
+	        <link rel="stylesheet" href="css/5grid/core-1200px.css" />
+	        <link rel="stylesheet" href="css/5grid/core-noscript.css" />
+	        <link rel="stylesheet" href="css/style.css" />
+	        <link rel="stylesheet" href="css/style-desktop.css" />  
+		                 
+	    </noscript>
+          
+        <link href="css/bootstrap.min.css" rel="stylesheet" /> 
+        
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 		<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
@@ -25,47 +34,44 @@
 	<body class="homepage">
 
 		<!-- Header Wrapper -->
-			<div id="header-wrapper">
-				<div class="5grid-layout">
-					<div class="row">
+			<div id="header-wrapper">					
+			
+				<div class="5grid-layout">					
+					<div class="row">											
 						<div class="12u">
-						
-							<!-- Header -->
-								<header id="header">
-									
-									<!-- Logo -->																			
-										<span><a href="/" class="mobileUI-site-name"><img src="images\seal.gif"></a></span>											
-									<!-- Nav -->
-										<nav id="nav" class="mobileUI-site-nav">	
-											<ul>
-												<li class="first current_page_item"><a href="history.html">History</a></li>												
-												<li><a href="about.html">About Us</a></li>
-												<li><a href="twocolumn2.html">Upcoming Events</a></li>
-												<li><a href="onecolumn.html">Contact Us</a></li>
-												<li><a href="twocolumn2.html">Upcoming Events</a></li>
-												<li>
-													<a href="" class="arrow">Merchandise</a><br />												
-													<ul>
-														<li><a href="#">Pins</a></li>														
-														<li>
-															<span class="arrow">T-Shirts</span>
-															<ul>
-																<li><a href="#">Blue</a></li>
-																<li><a href="#">Gray</a></li>																
-															</ul>
-														</li>
-														<li><a href="#">Hats</a></li>
-														<li><a href="#">Cups</a></li>														
-													</ul>
-												</li>
-											</ul>
-										</nav>
-								</header>
-						</div>
-					</div>
+						    <header id="header">
+						       <img src="images\seal.gif">
+                               		    	
+							    <nav id="nav" class="mobileUI-site-nav">	
+							        <ul>
+							            <li class="first current_page_item"><a href="index.html#about">About Us</a></li>																            																					
+							            <li><a href="index.html#events">Upcoming Events</a></li>
+							            <li><a id="opener" style="cursor: pointer;" data-toggle="modal" data-target="#myModal">Contact</a></li>
+                                    
+							            <li>
+							                <a href="index.html#swag">Merchandise</a><br />												
+							                <!--<ul>
+							                        <li><a href="index.html#pin">Pins</a></li>														
+							                        <li>
+							                            <span class="arrow">T-Shirts</span>
+							                            <ul>
+							                                <li><a href="index.html#shirtnavy">Navy</a></li>
+							                                <li><a href="index.html#shirtgray">Gray</a></li>																
+							                            </ul>
+							                        </li>
+							                        <li><a href="index.html#hat">Hats</a></li>
+							                        <li><a href="index.html#cup">Cups</a></li>														
+							                    </ul>-->
+							            </li>
+                                        <li><a href="index.html#history">History</a></li>
+							        </ul>
+							</nav>
+						    </header>
+                        </div>					
+														
 				</div>
 			</div>
-		
+		    </div>
 		<!-- Main Wrapper -->
 			<div id="wrapper">
 					
@@ -75,25 +81,29 @@
 						<div class="row">
 							<div id="main" class="12u">
 								
-								<!-- Main -->
+							    <!-- Main -->
+                                    <a id ="about"></a>
 									<article class="box box-standard">
-										<div class="content">
-											<a href="#" class="image image-left image-left-solo"><img src="images\MAC2627.JPG" alt=""></a>
-											<h2>Louisville Police Pipes & Drums</h2>
-											<span class="subheading">The Prettiest Band in Town &trade;</span>
-											<p>Quisque vel sapien sit amet tellus elementum ultricies. Nunc vel orci turpis. Donec id malesuada metus. Nunc nulla velit, fermentum quis interdum quis, convallis eu sapien. Integer sed ipsum ante. Vivamus semper faucibus varius. Nam risus nibh, commodo vulputate etiam commodo lorem ipsum dolor sit amet dolore.</p>
-											<a href="about.html" class="button button-big button-padding button-icon button-icon-page">Continue Reading</a>
-										</div>
+									    <div class="content">
+									        <a href="index.html" class="image image-left image-left-solo"><img src="images\MAC2627.JPG" alt=""></a>
+									        <h2>Louisville Police Pipes & Drums</h2>
+									        <span class="subheading">Supporting Louisville's Finest</span>
+									        <p>A Non-Profit, 501(c)(3), organization that preserves the Celtic police tradition of playing the traditional instruments and songs of Highland pipe and drum bands. The band also strives to maintain a positive relationship with the citizens of Louisville and the surrounding communities through musical performances and community outreach.</p>
+									        <p>Although we have the support of the Louisville Metro Police Department, we are a seperate entity.  We are self funded and managed by an elected board which must consist of active or retired law enforcement officers.</p>											
+									    </div>
+                                        
+									    <a id="contact"></a>
+
 									</article>								
 							</div>
 						</div>
 						
 
-						<!-- Two Column -->
+						<!-- Upcoming Events / Swag -->
 						<div id="two-column" class="row">
 
 							<div class="6u">
-							
+							    <a id="events"></a>
 								<section class="box box-standard">
 									<div class="box-heading">
 										<h2>Upcoming Events</h2>
@@ -103,13 +113,14 @@
 										<a href="http://www.louisvilleirish.com/st-patricks-day-parade" class="image image-left image-left-solo"><img src="images/St-Patricks-Day-Parade-Louisville-2014_0_0.jpg" alt=""></a>
 										<ul class="style4">
 											<li class="first">
-												<h3><a href="#">St. Patricks Day</a></h3>
-												<h4><a href="#">March 15th, 2014</a></h4>
+												<h3><a href="http://www.louisvilleirish.com/st-patricks-day-parade" target="_blank">St. Patricks Day</a></h3>
+												<h4><a href="http://www.louisvilleirish.com/st-patricks-day-parade" target="_blank">March 15th, 2014</a></h4>
 												<p>Each year, the Louisville Hibernians put together, with the wonderful help of all of our "Irish" friends, the greatest parade of ALL TIME!</p>
 											</li>
 											<li>
-												<h3><a href="#">Kentucky Derby Pegasus Parade</a></h3>
-												<p><a href="#">The 2014 Pegasus Parade will march down Broadway on Thursday, May 1. This family-friendly annual event showcases some of the nation’s finest marching bands and equestrian units, along with the amazing Louisville Police Pipes and Drum band that are designed and decorated to reflect the 2014 theme, “Call Of The Wild.”</a></p>
+											    <h3><a href="http://discover.kdf.org/republic-bank-pegasus-parade/" target="_blank">Kentucky Derby Pegasus Parade</a></h3>
+                                                <h4><a href="http://discover.kdf.org/republic-bank-pegasus-parade/" target="_blank">May 1st, 2014</a></h4>
+												<p>The 2014 Pegasus Parade will march down Broadway on Thursday, May 1. This family-friendly annual event showcases some of the nation’s finest marching bands and equestrian units, along with the amazing Louisville Police Pipes and Drum band that are designed and decorated to reflect the 2014 theme, “Call Of The Wild.”</a></p>
 											</li>
 										</ul>
 									</div>
@@ -119,34 +130,61 @@
 
 							<div class="6u">
 							
-								<section class="box box-standard">
+							    <section class="box box-standard">
+                                    <a id="swag"></a>
 									<div class="box-heading">
 										<h2>Merchandise</h2>
-										<span class="subheading">We carry a full line of shirts, cups, and pins</span>
+										<span class="subheading">We carry a full line of shirts, cups, and pins</a></span>
 									</div>
-									<div class="content">
-										<a href="#" class="image image-left image-left-solo"><img src="images/shirtnavy.gif" alt=""></a>
-										<ul class="style4">
-											<li class="first">
-												<h3><a href="#">T-shirts</a></h3>
-												<p><a href="#">Sizes XS-XXXL availalbe in blue and gray.  Prices starting at $25.</a></p>
-											</li>
-											<li>
-												<h3><a href="#">High Margin Item</a></h3>
-												<p><a href="#">This high margin item makes us the most profit per unit and should go on the front page.</a></p>
-											</li>
-										</ul>
-									</div>
-								</section>
+								    <div class="content">
+								        
+								        <a href="index.html#swag" class="image image-left"><img src="images/shirtpatch.gif" alt=""></a>                                       
+								        <ul class="style4">
+								            <li class="first">
+								                <h3><a href="index.html#swag">T-shirts</a></h3>
+								                <p>All sizes availalbe in blue and gray.  Prices starting at $25.</p>
+								            </li>
+								            <li>
+								                <h3><a href="index.html#swag">Patches and Cups</a></h3>
+								                <p>This high margin item makes us the most profit per unit and should go on the front page.</p>
+								            </li>
+								        </ul>
+                                        
+                                        <a id="A3" style="cursor: pointer;" data-toggle="modal" data-target="#myModal">Contact us for purchasing details.</a>
+								    </div>
+							    </section>
+                                                               
 							
 							</div>
 
 						</div>
-						<!-- Two Column -->
+						<!-- Upcoming Events / Swag -->
+                        
+                        <!-- History -->
+					    <div class="row">
+					        <div id="Div1" class="12u">
+								
+					            <!-- Main -->
+					            <a id ="history"></a>
+					            <article class="box box-standard">
+					                <div class="content">
+					                    <a href="index.html#history" class="image image-right image-right-solo"><img src="images\skye.jpg" width="200" alt=""></a>					                
+					                    <h2>History</h2>
+					                    <span class="subheading">Supporting Louisville's Finest</span>
+					                    <p>The Louisville Police Pipes and Drums was founded in August of 2011 by members of the Louisville Metro Police Department.  
+					                        With the help of the Louisville Pipe Band, members met weekly for over a year taking lessons on the Great Highland bagpipes and Scottish drums.  
+					                        On March 23, 2013, the band made its first public appearance at the St. Patrick's Day parade in the Highlands.  
+					                        Since our first appearance the band and its members have been called upon to play for several police academy graduations, ceremonies, and funerals. </p>											
+					                </div>
+					            </article>								
+					        </div>
+					    </div>
+					    <!-- History -->
+                  
 
-					</div>
-				</div>
-			
+
+					    </div>
+				</div>			
 			</div>
 		<!-- Main Wrapper Ends Here -->
 
@@ -159,9 +197,10 @@
 					
 						<!-- Copyright -->
 							<div class="row">
-								<div id="copyright">
-									&copy; Louisville Police Pipes and Drums. All rights reserved. 
-								</div>
+							    <div id="copyright">
+							        &copy; Louisville Police Pipes and Drums. All rights reserved. 
+							    </div>
+                             
 							</div>
 						<!-- Copyright Ends Here -->
 
@@ -169,7 +208,26 @@
 					</footer>
 
 			</div>
-		<!-- Footer Wrapper Ends Here -->
+	    <!-- Footer Wrapper Ends Here -->
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+      </div>
+      <div class="modal-body">
+          <address>
+              <strong>Louisville Police Pipes and Drums</strong><br>
+              P.O. Box 2545<br>
+              Louisville, KY 40201<br>              
+          </address>
+      </div>
+      
+    </div>
+  </div>
+</div>
 
 	</body>
 </html>
